@@ -1,6 +1,19 @@
 {
-   "builds":[{"src":"web.py", "use": "vercel/python"}],
-   "routes":[{"src":"/(.*)", "dest": "web.py"}]
-
-
+   
+  "builds": [
+    {
+      "src": "web.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "web.py"
+    }
+  ],
+  "git": {
+    "protocol": "https"
+  }
 }
+
